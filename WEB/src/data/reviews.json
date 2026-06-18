@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "tourId": 1,
+    "tourName": "Sigiriya Rock Fortress Adventure",
+    "userName": "Emma Thompson",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma",
+    "rating": 5,
+    "date": "2024-10-15",
+    "comment": "Absolutely breathtaking! The climb was challenging but so worth it. Our guide was incredibly knowledgeable about the history and pointed out details I would have missed. The views from the top are simply stunning. A must-do in Sri Lanka!"
+  },
+  {
+    "id": 2,
+    "tourId": 2,
+    "tourName": "Yala National Park Safari",
+    "userName": "David Martinez",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+    "rating": 5,
+    "date": "2024-10-12",
+    "comment": "We saw 3 leopards! Our driver/guide knew exactly where to go and was very respectful of the animals. The park is beautiful and we also saw elephants, peacocks, and crocodiles. Early morning safari is definitely the way to go."
+  },
+  {
+    "id": 3,
+    "tourId": 3,
+    "tourName": "Ella Hill Country Trek",
+    "userName": "Sophie Chen",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie",
+    "rating": 5,
+    "date": "2024-10-10",
+    "comment": "Perfect day in Ella! The Little Adam's Peak trek was easier than expected with amazing views. Nine Arch Bridge was magical when the train passed. Tea tasting was a lovely bonus. Our guide made the experience even better with local stories."
+  },
+  {
+    "id": 4,
+    "tourId": 1,
+    "tourName": "Sigiriya Rock Fortress Adventure",
+    "userName": "Michael Brown",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Michael",
+    "rating": 4,
+    "date": "2024-10-08",
+    "comment": "Great historical site! The frescoes are beautiful and well-preserved. Can get quite crowded around midday, so I'd recommend going early morning. Bring water and wear comfortable shoes. The gardens at the base are also lovely."
+  },
+  {
+    "id": 5,
+    "tourId": 5,
+    "tourName": "Mirissa Whale Watching",
+    "userName": "Laura Anderson",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Laura",
+    "rating": 5,
+    "date": "2024-10-05",
+    "comment": "Unforgettable experience! We saw multiple blue whales and a huge pod of dolphins. The crew was professional and knowledgeable. The boat was comfortable. Take seasickness tablets if you're prone to motion sickness. Worth every penny!"
+  },
+  {
+    "id": 6,
+    "tourId": 6,
+    "tourName": "Kandy Temple & Cultural Show",
+    "userName": "James Wilson",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
+    "rating": 5,
+    "date": "2024-10-03",
+    "comment": "The Temple of the Tooth is magnificent and very spiritual. The botanical gardens are huge and beautiful - could spend hours there. The cultural show was vibrant and entertaining. Our guide explained the religious significance really well."
+  },
+  {
+    "id": 7,
+    "tourId": 4,
+    "tourName": "Galle Fort Heritage Walk",
+    "userName": "Olivia Taylor",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Olivia",
+    "rating": 4,
+    "date": "2024-09-30",
+    "comment": "Lovely walk through colonial history. The fort is very well preserved with beautiful architecture. Lots of charming cafes and shops. The sunset from the lighthouse is spectacular. Would have loved more time to explore the museums."
+  },
+  {
+    "id": 8,
+    "tourId": 2,
+    "tourName": "Yala National Park Safari",
+    "userName": "Ryan Garcia",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ryan",
+    "rating": 4,
+    "date": "2024-09-28",
+    "comment": "Great safari experience! Didn't see leopards but saw plenty of elephants, deer, and birds. The landscape is stunning. Our guide was patient and informative. Recommend bringing binoculars and a good camera with zoom lens."
+  },
+  {
+    "id": 9,
+    "tourName": "Ella Hill Country Trek",
+    "tourId": 3,
+    "userName": "Isabella Rodriguez",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Isabella",
+    "rating": 5,
+    "date": "2024-09-25",
+    "comment": "Ella exceeded all expectations! The scenery is like something from a postcard. The trek was moderate difficulty - good for all fitness levels. Tea plantation visit was fascinating. The lunch was delicious local cuisine. Highly recommend!"
+  },
+  {
+    "id": 10,
+    "tourId": 5,
+    "tourName": "Mirissa Whale Watching",
+    "userName": "Daniel Lee",
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Daniel",
+    "rating": 5,
+    "date": "2024-09-22",
+    "comment": "Absolutely incredible! Seeing a blue whale breach was a dream come true. The dolphins were so playful around the boat. Crew was respectful of wildlife and followed all guidelines. Beautiful sunrise on the ocean. Life-changing experience!"
+  }
+]

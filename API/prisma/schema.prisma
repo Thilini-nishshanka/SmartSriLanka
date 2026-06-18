@@ -1,0 +1,394 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  admin
+  user
+}
+
+enum BookingStatus {
+  pending
+  confirmed
+  cancelled
+  completed
+}
+
+enum ReviewStatus {
+  approved
+  pending
+  rejected
+}
+
+model Profile {
+  id         String    @id @default(uuid())
+  email      String    @unique
+  name       String    @map("name")
+  password   String
+  role       UserRole  @default(user)
+  phone      String?
+  country    String?
+  avatarUrl  String?   @map("avatar_url")
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+  
+  bookings      Booking[]
+  hotelBookings HotelBooking[]
+  payments      Payment[]
+  tourReviews   TourReview[]
+  hotelReviews  HotelReview[]
+  
+  @@map("profiles")
+}
+
+model Tour {
+  id            BigInt        @id @default(autoincrement())
+  name          String
+  category      String
+  location      String
+  duration      String
+  price         Decimal       @db.Decimal(10, 2)
+  rating        Decimal       @default(0) @db.Decimal(3, 2)
+  reviewsCount  Int           @default(0) @map("reviews_count")
+  description   String        @db.Text
+  mainImage     String?       @map("main_image")
+  mapEmbed      String?       @map("map_embed") @db.Text
+  numberOfDays  Int           @default(1) @map("number_of_days")
+  isActive      Boolean       @default(true) @map("is_active")
+  createdAt     DateTime      @default(now()) @map("created_at")
+  updatedAt     DateTime      @updatedAt @map("updated_at")
+  
+  images        TourImage[]
+  highlights    TourHighlight[]
+  inclusions    TourInclusion[]
+  itineraryDays ItineraryDay[]
+  bookings      Booking[]
+  reviews       TourReview[]
+  
+  @@index([category])
+  @@index([location])
+  @@index([isActive])
+  @@map("tours")
+}
+
+model TourImage {
+  id           BigInt   @id @default(autoincrement())
+  tourId       BigInt   @map("tour_id")
+  imageUrl     String   @map("image_url")
+  displayOrder Int      @default(0) @map("display_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+  
+  tour Tour @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  
+  @@index([tourId])
+  @@map("tour_images")
+}
+
+model TourHighlight {
+  id           BigInt @id @default(autoincrement())
+  tourId       BigInt @map("tour_id")
+  highlight    String @db.Text
+  displayOrder Int    @default(0) @map("display_order")
+  
+  tour Tour @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  
+  @@index([tourId])
+  @@map("tour_highlights")
+}
+
+model TourInclusion {
+  id           BigInt @id @default(autoincrement())
+  tourId       BigInt @map("tour_id")
+  inclusion    String @db.Text
+  displayOrder Int    @default(0) @map("display_order")
+  
+  tour Tour @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  
+  @@index([tourId])
+  @@map("tour_inclusions")
+}
+
+model ItineraryDay {
+  id             BigInt   @id @default(autoincrement())
+  tourId         BigInt   @map("tour_id")
+  dayNumber      Int      @map("day_number")
+  title          String
+  meals          Json     @default("[]")
+  accommodation  String?
+  createdAt      DateTime @default(now()) @map("created_at")
+  
+  tour  Tour             @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  stops ItineraryStop[]
+  
+  @@unique([tourId, dayNumber])
+  @@index([tourId])
+  @@map("itinerary_days")
+}
+
+model ItineraryStop {
+  id                BigInt   @id @default(autoincrement())
+  itineraryDayId    BigInt   @map("itinerary_day_id")
+  stopOrder         Int      @map("stop_order")
+  name              String
+  description       String?  @db.Text
+  duration          String
+  latitude          Decimal? @db.Decimal(10, 8)
+  longitude         Decimal? @db.Decimal(11, 8)
+  admissionIncluded Boolean  @default(false) @map("admission_included")
+  createdAt         DateTime @default(now()) @map("created_at")
+  
+  itineraryDay ItineraryDay @relation(fields: [itineraryDayId], references: [id], onDelete: Cascade)
+  
+  @@index([itineraryDayId])
+  @@map("itinerary_stops")
+}
+
+model Booking {
+  id              BigInt        @id @default(autoincrement())
+  userId          String        @map("user_id")
+  tourId          BigInt        @map("tour_id")
+  bookingDate     DateTime      @map("booking_date") @db.Date
+  numberOfPeople  Int           @map("number_of_people")
+  totalPrice      Decimal       @map("total_price") @db.Decimal(10, 2)
+  status          BookingStatus @default(pending)
+  specialRequests String?       @map("special_requests") @db.Text
+  contactName     String        @map("contact_name")
+  contactEmail    String        @map("contact_email")
+  contactPhone    String        @map("contact_phone")
+  createdAt       DateTime      @default(now()) @map("created_at")
+  updatedAt       DateTime      @updatedAt @map("updated_at")
+  
+  user     Profile      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tour     Tour         @relation(fields: [tourId], references: [id], onDelete: Restrict)
+  payments Payment[]
+  reviews  TourReview[]
+  
+  @@index([userId])
+  @@index([tourId])
+  @@index([bookingDate])
+  @@index([status])
+  @@map("bookings")
+}
+
+model Hotel {
+  id            BigInt   @id @default(autoincrement())
+  name          String
+  location      String
+  city          String
+  rating        Decimal  @default(0) @db.Decimal(3, 2)
+  reviewsCount  Int      @default(0) @map("reviews_count")
+  priceFrom     Decimal  @db.Decimal(10, 2) @map("price_from")
+  description   String   @db.Text
+  hotelClass    String   @map("hotel_class")
+  mainImage     String?  @map("main_image")
+  mapEmbed      String?  @map("map_embed") @db.Text
+  latitude      Decimal? @db.Decimal(10, 8)
+  longitude     Decimal? @db.Decimal(11, 8)
+  isActive      Boolean  @default(true) @map("is_active")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+  
+  images         HotelImage[]
+  styles         HotelStyle[]
+  amenities      HotelAmenity[]
+  roomTypes      HotelRoomType[]
+  bookings       HotelBooking[]
+  reviews        HotelReview[]
+  
+  @@index([city])
+  @@index([isActive])
+  @@map("hotels")
+}
+
+model HotelImage {
+  id           BigInt   @id @default(autoincrement())
+  hotelId      BigInt   @map("hotel_id")
+  imageUrl     String   @map("image_url")
+  displayOrder Int      @default(0) @map("display_order")
+  createdAt    DateTime @default(now()) @map("created_at")
+  
+  hotel Hotel @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  
+  @@index([hotelId])
+  @@map("hotel_images")
+}
+
+model HotelStyle {
+  id           BigInt @id @default(autoincrement())
+  hotelId      BigInt @map("hotel_id")
+  style        String
+  displayOrder Int    @default(0) @map("display_order")
+  
+  hotel Hotel @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  
+  @@index([hotelId])
+  @@map("hotel_styles")
+}
+
+model HotelAmenity {
+  id           BigInt @id @default(autoincrement())
+  hotelId      BigInt @map("hotel_id")
+  amenity      String
+  displayOrder Int    @default(0) @map("display_order")
+  
+  hotel Hotel @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  
+  @@index([hotelId])
+  @@map("hotel_amenities")
+}
+
+model HotelRoomType {
+  id          BigInt  @id @default(autoincrement())
+  hotelId     BigInt  @map("hotel_id")
+  name        String
+  description String  @db.Text
+  price       Decimal @db.Decimal(10, 2)
+  maxGuests   Int     @map("max_guests")
+  image       String?
+  available   Boolean @default(true)
+  totalRooms  Int     @default(2) @map("total_rooms")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  
+  hotel    Hotel              @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  features HotelRoomFeature[]
+  bookings HotelBooking[]
+  
+  @@index([hotelId])
+  @@map("hotel_room_types")
+}
+
+model HotelRoomFeature {
+  id           BigInt @id @default(autoincrement())
+  roomTypeId   BigInt @map("room_type_id")
+  feature      String
+  displayOrder Int    @default(0) @map("display_order")
+  
+  roomType HotelRoomType @relation(fields: [roomTypeId], references: [id], onDelete: Cascade)
+  
+  @@index([roomTypeId])
+  @@map("hotel_room_features")
+}
+
+model HotelBooking {
+  id             BigInt        @id @default(autoincrement())
+  userId         String        @map("user_id")
+  hotelId        BigInt        @map("hotel_id")
+  roomTypeId     BigInt        @map("room_type_id")
+  checkInDate    DateTime      @map("check_in_date") @db.Date
+  checkOutDate   DateTime      @map("check_out_date") @db.Date
+  numberOfRooms  Int           @map("number_of_rooms")
+  numberOfGuests Int           @map("number_of_guests")
+  totalPrice     Decimal       @map("total_price") @db.Decimal(10, 2)
+  status         BookingStatus @default(pending)
+  contactName    String        @map("contact_name")
+  contactEmail   String        @map("contact_email")
+  contactPhone   String        @map("contact_phone")
+  createdAt      DateTime      @default(now()) @map("created_at")
+  updatedAt      DateTime      @updatedAt @map("updated_at")
+  
+  user     Profile       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  hotel    Hotel         @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  roomType HotelRoomType @relation(fields: [roomTypeId], references: [id], onDelete: Restrict)
+  payments Payment[]
+  
+  @@index([userId])
+  @@index([roomTypeId])
+  @@index([hotelId])
+  @@index([checkInDate])
+  @@index([status])
+  @@map("hotel_bookings")
+}
+
+model Payment {
+  id                    BigInt         @id @default(autoincrement())
+  userId                String         @map("user_id")
+  bookingId             BigInt?        @map("booking_id")
+  hotelBookingId        BigInt?        @map("hotel_booking_id")
+  amount                Decimal        @db.Decimal(10, 2)
+  currency              String         @default("USD")
+  paymentMethod         String         @map("payment_method")
+  transactionId         String?        @unique @map("transaction_id")
+  status                String         @default("pending")
+  stripePaymentIntentId String?        @map("stripe_payment_intent_id")
+  cardLast4             String?        @map("card_last4")
+  cardBrand             String?        @map("card_brand")
+  paidAt                DateTime?      @map("paid_at")
+  createdAt             DateTime       @default(now()) @map("created_at")
+  updatedAt             DateTime       @updatedAt @map("updated_at")
+  
+  user         Profile       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  booking      Booking?      @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  hotelBooking HotelBooking? @relation(fields: [hotelBookingId], references: [id], onDelete: Cascade)
+  
+  @@index([userId])
+  @@index([bookingId])
+  @@index([hotelBookingId])
+  @@index([status])
+  @@index([transactionId])
+  @@map("payments")
+}
+
+model TourReview {
+  id         BigInt       @id @default(autoincrement())
+  userId     String       @map("user_id")
+  tourId     BigInt       @map("tour_id")
+  bookingId  BigInt?      @map("booking_id")
+  rating     Int
+  comment    String       @db.Text
+  isVerified Boolean      @default(false) @map("is_verified")
+  status     ReviewStatus @default(pending)
+  createdAt  DateTime     @default(now()) @map("created_at")
+  updatedAt  DateTime     @updatedAt @map("updated_at")
+  
+  user    Profile  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tour    Tour     @relation(fields: [tourId], references: [id], onDelete: Cascade)
+  booking Booking? @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+  
+  @@index([tourId])
+  @@index([userId])
+  @@index([status])
+  @@map("tour_reviews")
+}
+
+model HotelReview {
+  id                  BigInt       @id @default(autoincrement())
+  userId              String       @map("user_id")
+  hotelId             BigInt       @map("hotel_id")
+  overallRating       Int          @map("overall_rating")
+  locationRating      Int          @map("location_rating")
+  roomsRating         Int          @map("rooms_rating")
+  valueRating         Int          @map("value_rating")
+  cleanlinessRating   Int          @map("cleanliness_rating")
+  serviceRating       Int          @map("service_rating")
+  sleepQualityRating  Int          @map("sleep_quality_rating")
+  comment             String       @db.Text
+  isVerified          Boolean      @default(false) @map("is_verified")
+  status              ReviewStatus @default(pending)
+  createdAt           DateTime     @default(now()) @map("created_at")
+  updatedAt           DateTime     @updatedAt @map("updated_at")
+  
+  user  Profile @relation(fields: [userId], references: [id], onDelete: Cascade)
+  hotel Hotel   @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  
+  @@index([hotelId])
+  @@index([userId])
+  @@index([status])
+  @@map("hotel_reviews")
+}
+
+model PolicyPage {
+  id        Int      @id @default(autoincrement())
+  slug      String   @unique // e.g., 'terms-and-conditions', 'privacy-policy'
+  title     String
+  content   String   @db.LongText
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("policy_pages")
+}

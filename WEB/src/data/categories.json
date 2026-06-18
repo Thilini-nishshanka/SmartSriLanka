@@ -1,0 +1,22 @@
+[
+  {
+    "id": "all",
+    "name": "All Tours",
+    "icon": "Globe"
+  },
+  {
+    "id": "cultural",
+    "name": "Cultural",
+    "icon": "Landmark"
+  },
+  {
+    "id": "nature",
+    "name": "Nature",
+    "icon": "TreePine"
+  },
+  {
+    "id": "adventure",
+    "name": "Adventure",
+    "icon": "Mountain"
+  }
+]

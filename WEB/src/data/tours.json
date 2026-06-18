@@ -1,0 +1,351 @@
+[
+  {
+    "id": 1,
+    "name": "Sigiriya Rock Fortress Adventure",
+    "category": "Cultural",
+    "location": "Sigiriya, Central Province",
+    "duration": "Full Day (8 hours)",
+    "price": 120,
+    "rating": 4.9,
+    "reviewsCount": 234,
+    "image": "https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800&q=80",
+    "images": ["https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=800&q=80"],
+    "numberOfDays": 1,
+    "itinerary": [],
+    "description": "Climb the ancient Sigiriya Rock Fortress, a UNESCO World Heritage Site. Marvel at the frescoes, water gardens, and panoramic views from the summit. This 5th-century fortress offers an unforgettable journey through Sri Lankan history.",
+    "highlights": [
+      "Climb the iconic 200-meter rock fortress",
+      "View ancient frescoes and mirror wall",
+      "Explore symmetrical water gardens",
+      "360-degree panoramic summit views"
+    ],
+    "included": [
+      "Professional tour guide",
+      "Entrance fees",
+      "Bottled water",
+      "Hotel pickup and drop-off"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8!2d80.7597!3d7.9569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb5e6c3f3f3f3f%3A0x3f3f3f3f3f3f3f3f!2sSigiriya!5e0!3m2!1sen!2slk!4v1234567890"
+  },
+  {
+    "id": 2,
+    "name": "Yala National Park Safari",
+    "category": "Nature",
+    "location": "Yala, Southern Province",
+    "duration": "Half Day (4 hours)",
+    "price": 95,
+    "rating": 4.8,
+    "reviewsCount": 189,
+    "image": "https://images.unsplash.com/photo-1551091413-75a9e5eebe8e?w=800&q=80",
+    "images": ["https://images.unsplash.com/photo-1551091413-75a9e5eebe8e?w=800&q=80"],
+    "numberOfDays": 1,
+    "itinerary": [],
+    "description": "Embark on an exciting safari through Yala National Park, home to the highest density of leopards in the world. Spot elephants, sloth bears, crocodiles, and over 200 bird species in their natural habitat.",
+    "highlights": [
+      "Leopard sightings (highest density globally)",
+      "Elephant herds and sloth bears",
+      "Over 200 bird species",
+      "Scenic coastal landscapes"
+    ],
+    "included": [
+      "4x4 safari jeep",
+      "Expert wildlife guide",
+      "Park entrance fees",
+      "Breakfast/refreshments"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8!2d81.3864!3d6.3727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae69a9b9b9b9b9b%3A0x9b9b9b9b9b9b9b9b!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1234567890"
+  },
+  {
+    "id": 3,
+    "name": "Ella Hill Country Trek",
+    "category": "Adventure",
+    "location": "Ella, Uva Province",
+    "duration": "Full Day (7 hours)",
+    "price": 85,
+    "rating": 4.7,
+    "reviewsCount": 156,
+    "image": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80",
+    "images": ["https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80"],
+    "numberOfDays": 1,
+    "itinerary": [],
+    "description": "Trek through the stunning Ella region, known for its tea plantations, waterfalls, and dramatic mountain views. Visit Little Adam's Peak and Nine Arch Bridge for unforgettable photo opportunities.",
+    "highlights": [
+      "Little Adam's Peak sunrise trek",
+      "Nine Arch Bridge railway views",
+      "Tea plantation visits",
+      "Ravana Falls waterfall"
+    ],
+    "included": [
+      "Experienced trekking guide",
+      "Tea tasting session",
+      "Packed lunch",
+      "Transportation"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8!2d81.0462!3d6.8667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae46b9b9b9b9b9b%3A0x9b9b9b9b9b9b9b9b!2sElla!5e0!3m2!1sen!2slk!4v1234567890"
+  },
+  {
+    "id": 4,
+    "name": "Galle Fort Heritage Walk",
+    "category": "Cultural",
+    "location": "Galle, Southern Province",
+    "duration": "Half Day (3 hours)",
+    "price": 60,
+    "rating": 4.6,
+    "reviewsCount": 203,
+    "image": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80",
+    "images": ["https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=800&q=80"],
+    "numberOfDays": 1,
+    "itinerary": [],
+    "description": "Explore the historic Galle Fort, a UNESCO World Heritage Site showcasing Dutch colonial architecture. Walk along the ramparts, visit museums, and browse artisan shops and cafes.",
+    "highlights": [
+      "Dutch colonial architecture",
+      "Lighthouse and rampart walks",
+      "Historical museums",
+      "Local artisan shops and cafes"
+    ],
+    "included": [
+      "Professional guide",
+      "Museum entrance fees",
+      "Refreshments",
+      "Photo opportunities"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8!2d80.2167!3d6.0328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173b9b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2sGalle%20Fort!5e0!3m2!1sen!2slk!4v1234567890"
+  },
+  {
+    "id": 5,
+    "name": "Mirissa Whale Watching",
+    "category": "Nature",
+    "location": "Mirissa, Southern Coast",
+    "duration": "Half Day (4 hours)",
+    "price": 75,
+    "rating": 4.9,
+    "reviewsCount": 178,
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+    "images": ["https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"],
+    "numberOfDays": 1,
+    "itinerary": [],
+    "description": "Set sail on the Indian Ocean for an unforgettable whale and dolphin watching experience. Spot blue whales, sperm whales, and playful dolphins in their natural habitat.",
+    "highlights": [
+      "Blue whale sightings",
+      "Dolphin pods",
+      "Sperm whales and turtles",
+      "Ocean sunrise views"
+    ],
+    "included": [
+      "Boat excursion",
+      "Life jackets",
+      "Light breakfast",
+      "Marine biologist guide"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8!2d80.4617!3d5.9450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae138b9b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2sMirissa!5e0!3m2!1sen!2slk!4v1234567890"
+  },
+  {
+    "id": 6,
+    "name": "Kandy Temple & Cultural Show",
+    "category": "Cultural",
+    "location": "Kandy, Central Province",
+    "duration": "Full Day (6 hours)",
+    "price": 90,
+    "rating": 4.8,
+    "reviewsCount": 221,
+    "image": "https://images.unsplash.com/photo-1588416936097-41850ab3d86d?w=800&q=80",
+    "images": ["https://images.unsplash.com/photo-1588416936097-41850ab3d86d?w=800&q=80"],
+    "numberOfDays": 1,
+    "itinerary": [],
+    "description": "Visit the sacred Temple of the Tooth Relic in Kandy, explore the Royal Botanical Gardens, and enjoy a traditional Kandyan cultural dance performance.",
+    "highlights": [
+      "Temple of the Tooth Relic",
+      "Royal Botanical Gardens",
+      "Traditional dance performance",
+      "Kandy Lake views"
+    ],
+    "included": [
+      "All entrance fees",
+      "Cultural show tickets",
+      "Lunch at local restaurant",
+      "Transportation"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8!2d80.6350!3d7.2906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366b9b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2sKandy!5e0!3m2!1sen!2slk!4v1234567890"
+  },
+  {
+    "id": 7,
+    "name": "4 Days Sri Lanka Round Tour",
+    "category": "Cultural",
+    "location": "Multiple Locations",
+    "duration": "4 Days",
+    "price": 845,
+    "rating": 4.9,
+    "reviewsCount": 409,
+    "image": "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=800",
+    "images": [
+      "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=800",
+      "https://images.unsplash.com/photo-1515690459744-344d2e3f4c6e?auto=format&fit=crop&w=800",
+      "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800",
+      "https://images.unsplash.com/photo-1552047329-302b6ee86e4f?auto=format&fit=crop&w=800"
+    ],
+    "numberOfDays": 4,
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Colombo Airport to Sigiriya via Dambulla",
+        "stops": [
+          {
+            "name": "Bandaranaike International Airport",
+            "description": "Pick up from airport and begin journey",
+            "duration": "30 mins",
+            "admissionIncluded": false,
+            "location": { "lat": 7.1807, "lng": 79.8841 }
+          },
+          {
+            "name": "Dambulla Cave Temple",
+            "description": "Visit the ancient Buddhist cave temple complex with stunning murals",
+            "duration": "2 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 7.8567, "lng": 80.6487 }
+          },
+          {
+            "name": "Minneriya National Park",
+            "description": "Afternoon elephant safari in the national park",
+            "duration": "3 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 8.0267, "lng": 80.8897 }
+          },
+          {
+            "name": "Sigiriya Hotel Check-in",
+            "description": "Check-in to your hotel in Sigiriya",
+            "duration": "1 hour",
+            "admissionIncluded": false,
+            "location": { "lat": 7.9569, "lng": 80.7598 }
+          }
+        ],
+        "meals": ["Dinner"],
+        "accommodation": "Overnight at Sigiriya - Standard or luxury hotels"
+      },
+      {
+        "day": 2,
+        "title": "Sigiriya Rock Fortress to Kandy",
+        "stops": [
+          {
+            "name": "Sigiriya Rock Fortress",
+            "description": "Climb the ancient rock fortress at sunrise",
+            "duration": "3 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 7.9569, "lng": 80.7598 }
+          },
+          {
+            "name": "Spice Garden Visit",
+            "description": "Learn about Ceylon spices at a traditional spice garden",
+            "duration": "1 hour",
+            "admissionIncluded": true,
+            "location": { "lat": 7.4818, "lng": 80.5928 }
+          },
+          {
+            "name": "Temple of the Tooth",
+            "description": "Visit the sacred Buddhist temple in Kandy",
+            "duration": "2 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 7.2936, "lng": 80.6407 }
+          },
+          {
+            "name": "Kandy Cultural Show",
+            "description": "Evening traditional dance performance",
+            "duration": "1.5 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 7.2906, "lng": 80.6337 }
+          }
+        ],
+        "meals": ["Breakfast", "Dinner"],
+        "accommodation": "Overnight at Kandy - Standard or luxury hotels"
+      },
+      {
+        "day": 3,
+        "title": "Kandy to Nuwara Eliya & Train to Ella",
+        "stops": [
+          {
+            "name": "Tea Plantation Visit",
+            "description": "Tour a working tea estate and factory",
+            "duration": "2 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 6.9497, "lng": 80.7891 }
+          },
+          {
+            "name": "Nuwara Eliya Town",
+            "description": "Explore the colonial hill station town",
+            "duration": "2 hours",
+            "admissionIncluded": false,
+            "location": { "lat": 6.9497, "lng": 80.7891 }
+          },
+          {
+            "name": "Scenic Train Journey",
+            "description": "Take the famous train ride through tea plantations to Ella",
+            "duration": "3 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 6.8667, "lng": 81.0462 }
+          },
+          {
+            "name": "Ella Accommodation",
+            "description": "Check-in to your hotel in Ella",
+            "duration": "1 hour",
+            "admissionIncluded": false,
+            "location": { "lat": 6.8667, "lng": 81.0462 }
+          }
+        ],
+        "meals": ["Breakfast", "Dinner"],
+        "accommodation": "Overnight at Ella - Standard or luxury hotels"
+      },
+      {
+        "day": 4,
+        "title": "Ella to South Coast (Mirissa/Galle)",
+        "stops": [
+          {
+            "name": "Nine Arch Bridge",
+            "description": "Visit the iconic colonial-era railway bridge",
+            "duration": "1 hour",
+            "admissionIncluded": false,
+            "location": { "lat": 6.8729, "lng": 81.0588 }
+          },
+          {
+            "name": "Little Adam's Peak",
+            "description": "Short hike with panoramic views",
+            "duration": "2 hours",
+            "admissionIncluded": false,
+            "location": { "lat": 6.8547, "lng": 81.0368 }
+          },
+          {
+            "name": "Galle Fort",
+            "description": "Explore the historic Dutch fort",
+            "duration": "2 hours",
+            "admissionIncluded": true,
+            "location": { "lat": 6.0267, "lng": 80.2170 }
+          },
+          {
+            "name": "Mirissa Beach",
+            "description": "Relax at the beautiful southern beach and check-in",
+            "duration": "2 hours",
+            "admissionIncluded": false,
+            "location": { "lat": 5.9467, "lng": 80.4707 }
+          }
+        ],
+        "meals": ["Breakfast", "Dinner"],
+        "accommodation": "Beach hotel in Mirissa"
+      }
+    ],
+    "description": "Experience the beauty of Sri Lanka on this comprehensive 4-day tour covering ancient sites, hill country, tea plantations, and stunning beaches. Private driver and vehicle with half-board accommodation included. Perfect for first-time visitors who want to see the best of Sri Lanka in a short time.",
+    "highlights": [
+      "Sigiriya Rock Fortress climb at sunrise",
+      "Temple of the Tooth in Kandy",
+      "Scenic train journey through tea country",
+      "Beautiful beaches and historic Galle Fort",
+      "Elephant safari at Minneriya",
+      "Traditional cultural performances"
+    ],
+    "included": [
+      "Private vehicle with driver",
+      "Half-board accommodation (breakfast & dinner)",
+      "Airport pickup and drop-off",
+      "Entrance fees to monuments",
+      "Professional English-speaking guide"
+    ],
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1014321.1781087853!2d79.69929584296875!3d7.290572100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0x2c63e344ab9a7536!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1234567890123!5m2!1sen!2slk"
+  }
+]

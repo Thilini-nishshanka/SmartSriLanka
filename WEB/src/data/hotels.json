@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "name": "Cape Weligama",
+    "location": "Kabalana Surf Beach, Ahangama",
+    "city": "Ahangama",
+    "rating": 4.9,
+    "reviewsCount": 228,
+    "priceFrom": 350,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&h=600&fit=crop"
+    ],
+    "description": "Casual Luxe 9-room beachfront boutique hotel perched right on the white sands of Kabalana Surf Beach offering stunning sunset views over the Indian Ocean.",
+    "hotelClass": "5-Star",
+    "hotelStyle": ["Modern", "Trendy", "Luxury"],
+    "propertyAmenities": [
+      "Free parking",
+      "Free High Speed Internet (WiFi)",
+      "Pool",
+      "Free breakfast",
+      "Beach",
+      "Water sport equipment rentals",
+      "Airport transportation",
+      "Adults only",
+      "Spa",
+      "Restaurant",
+      "Bar/Lounge",
+      "Fitness center"
+    ],
+    "coordinates": {
+      "lat": 5.9765,
+      "lng": 80.3654
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.123456789!2d80.3654!3d5.9765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTgnMzUuNCJOIDgwwrAyMScxOS40IkU!5e0!3m2!1sen!2slk!4v1234567890",
+    "roomTypes": [
+      {
+        "id": 1,
+        "hotelId": 1,
+        "name": "Deluxe Ocean View",
+        "description": "Spacious room with panoramic ocean views",
+        "price": 350,
+        "maxGuests": 2,
+        "features": [
+          "Ocean view",
+          "Private balcony",
+          "Air conditioning",
+          "Bathrobes",
+          "Complimentary toiletries",
+          "iPod docking station",
+          "Bath/shower",
+          "Desk",
+          "Housekeeping"
+        ],
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
+        "available": true
+      },
+      {
+        "id": 2,
+        "hotelId": 1,
+        "name": "Suite",
+        "description": "Luxurious suite with separate living area",
+        "price": 500,
+        "maxGuests": 4,
+        "features": [
+          "Ocean view",
+          "Private balcony",
+          "Air conditioning",
+          "Separate living area",
+          "Bathrobes",
+          "Complimentary toiletries",
+          "iPod docking station",
+          "Bath/shower",
+          "Desk",
+          "Housekeeping",
+          "Mini bar"
+        ],
+        "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Shangri-La Colombo",
+    "location": "One Galle Face, Colombo",
+    "city": "Colombo",
+    "rating": 4.8,
+    "reviewsCount": 456,
+    "priceFrom": 280,
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop"
+    ],
+    "description": "Luxury urban resort located in the heart of Colombo's business and entertainment district with stunning views of the Indian Ocean.",
+    "hotelClass": "5-Star",
+    "hotelStyle": ["Luxury", "Business", "Urban"],
+    "propertyAmenities": [
+      "Free parking",
+      "Free High Speed Internet (WiFi)",
+      "Pool",
+      "Breakfast available",
+      "Beach access",
+      "Spa",
+      "Restaurant",
+      "Bar/Lounge",
+      "Fitness center",
+      "Business center",
+      "Meeting rooms",
+      "Concierge"
+    ],
+    "coordinates": {
+      "lat": 6.9271,
+      "lng": 79.8612
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.789012345!2d79.8612!3d6.9271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTUnMzcuNiJOIDc5wrA1MSczOS43IkU!5e0!3m2!1sen!2slk!4v1234567890",
+    "roomTypes": [
+      {
+        "id": 3,
+        "hotelId": 2,
+        "name": "Deluxe Room",
+        "description": "Elegant room with city or ocean views",
+        "price": 280,
+        "maxGuests": 2,
+        "features": [
+          "City/Ocean view",
+          "Air conditioning",
+          "Bathrobes",
+          "Complimentary toiletries",
+          "Coffee maker",
+          "Bath/shower",
+          "Desk",
+          "Housekeeping",
+          "Safe"
+        ],
+        "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
+        "available": true
+      },
+      {
+        "id": 4,
+        "hotelId": 2,
+        "name": "Executive Suite",
+        "description": "Spacious suite with premium amenities",
+        "price": 450,
+        "maxGuests": 3,
+        "features": [
+          "Ocean view",
+          "Separate living area",
+          "Air conditioning",
+          "Bathrobes",
+          "Complimentary toiletries",
+          "Coffee maker",
+          "Bath/shower",
+          "Desk",
+          "Housekeeping",
+          "Safe",
+          "Mini bar",
+          "Executive lounge access"
+        ],
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Jetwing Lighthouse",
+    "location": "Dadella, Galle",
+    "city": "Galle",
+    "rating": 4.7,
+    "reviewsCount": 312,
+    "priceFrom": 220,
+    "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop"
+    ],
+    "description": "Clifftop hotel offering spectacular ocean views, designed by renowned architect Geoffrey Bawa, featuring direct beach access.",
+    "hotelClass": "4-Star",
+    "hotelStyle": ["Boutique", "Romantic", "Historic"],
+    "propertyAmenities": [
+      "Free parking",
+      "Free High Speed Internet (WiFi)",
+      "Pool",
+      "Free breakfast",
+      "Beach",
+      "Spa",
+      "Restaurant",
+      "Bar/Lounge",
+      "Fitness center",
+      "Kids club",
+      "Water sports"
+    ],
+    "coordinates": {
+      "lat": 6.0367,
+      "lng": 80.2170
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.456789012!2d80.2170!3d6.0367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDInMTIuMSJOIDgwwrAxMycwMS4yIkU!5e0!3m2!1sen!2slk!4v1234567890",
+    "roomTypes": [
+      {
+        "id": 5,
+        "hotelId": 3,
+        "name": "Superior Room",
+        "description": "Comfortable room with garden or ocean views",
+        "price": 220,
+        "maxGuests": 2,
+        "features": [
+          "Garden/Ocean view",
+          "Air conditioning",
+          "Bathrobes",
+          "Complimentary toiletries",
+          "Bath/shower",
+          "Desk",
+          "Housekeeping"
+        ],
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
+        "available": true
+      },
+      {
+        "id": 6,
+        "hotelId": 3,
+        "name": "Deluxe Ocean View",
+        "description": "Premium room with stunning ocean panoramas",
+        "price": 320,
+        "maxGuests": 3,
+        "features": [
+          "Ocean view",
+          "Private balcony",
+          "Air conditioning",
+          "Bathrobes",
+          "Complimentary toiletries",
+          "Bath/shower",
+          "Desk",
+          "Housekeeping",
+          "Mini bar"
+        ],
+        "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop",
+        "available": true
+      }
+    ]
+  }
+]

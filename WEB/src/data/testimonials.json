@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Johnson",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    "location": "London, UK",
+    "rating": 5,
+    "text": "Smart Travel made our Sri Lanka honeymoon absolutely magical! Every detail was perfectly planned. The guides were knowledgeable and friendly. We'll treasure these memories forever."
+  },
+  {
+    "id": 2,
+    "name": "Marcus Williams",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus",
+    "location": "New York, USA",
+    "rating": 5,
+    "text": "Best travel experience I've ever had! The tours were well-organized, the locations breathtaking, and the local insights invaluable. Highly recommend Smart Travel for anyone visiting Sri Lanka."
+  },
+  {
+    "id": 3,
+    "name": "Priya Patel",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+    "location": "Mumbai, India",
+    "rating": 5,
+    "text": "Exceeded all expectations! From whale watching to temple visits, every tour was extraordinary. The booking process was seamless and customer service exceptional. Will definitely book again!"
+  },
+  {
+    "id": 4,
+    "name": "Thomas Anderson",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas",
+    "location": "Sydney, Australia",
+    "rating": 5,
+    "text": "Sri Lanka is stunning and Smart Travel showed us the very best of it. Professional guides, comfortable transport, and unforgettable experiences. This trip changed my life!"
+  }
+]
